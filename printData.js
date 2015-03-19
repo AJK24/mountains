@@ -5,6 +5,7 @@ load('UnderlinedCell.js');
 load('houses.js');
 load('mountains.js');
 load('shoes.js');
+//driver file
 function dataTable(data) {
   var keys = Object.keys(data[0]);
   var headers = keys.map(function(name) {
@@ -18,4 +19,4 @@ function dataTable(data) {
   return [headers].concat(body);
 }
 
-print(drawTable(dataTable(SHOES)));
+print(drawTable(dataTable(MOUNTAINS)));
